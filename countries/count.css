@@ -8,3 +8,57 @@ section{
     margin: 25px auto;
     border: 10px solid blue;
 }
+
+section:first-of-type {
+    /* Nigeria flag: green #008751, white #ffffff, green #008751 */
+    background-image: linear-gradient(to right, #008751 33.33%, #ffffff 33.33%, #ffffff 66.66%, #008751 66.66%);
+  }
+
+  section:nth-of-type(2) {
+    /* Japan flag: white with a red circle */
+    background-image: #ffffff; /* White background */
+    position: relative;
+  }
+  
+
+  section:nth-of-type(2)::before {
+    /* Red circle for japan flag */
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background: #bc002d;
+    border-radius: 70%;
+  }
+
+
+
+  section:nth-of-type(3) {
+    /* Gambia flag: red #ce1126, blue #0c1c8c, green #3a7728 and white #ffffff stripes */
+    background-image: linear-gradient(to bottom, #ce1126 34%, #ffffff 34%, #ffffff 39%, #0c1c8c 39%, #0c1c8c 61%, #ffffff 61%, #ffffff 66%, #3a7728 66%);
+  }
+
+  section:nth-of-type(4) {
+    /* Gabon flag: green: #009E60 yellow: #FCD116 blue: #4664B2 */
+    background-image: linear-gradient(to bottom, #009E60 33.33%, #FCD116 33.33%, #FCD116 66.66%, #4664B2 66.66% );
+  }
+
+
+  section:nth-of-type(5) {
+    /* France flag: blue:#0055A4, white: #FFFFFF, red: #EF4135 */
+    background-image: linear-gradient(to right, #0055A4 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #EF4135 66.66%);
+  }
+
+  section:nth-of-type(6) {
+    /* Belgium flag:black: #000000, yellow: #FDDA24 and red:#EF3340,  */
+    background-image: linear-gradient(to right, #000000 34%, #FDDA24 34%, #FDDA24 66%,  #EF3340 66% );
+  }
+
+section:last-of-type {
+    /* Germany flag:black: #000000, red: #dd0000, yellow: #ffce00 */
+    background-image: linear-gradient( to bottom,#000000 33.33%, #dd0000 33.33%, #dd0000 66.66%, #ffce00 66.66% );
+}
