@@ -16,23 +16,7 @@ section:first-of-type {
 
   section:nth-of-type(2) {
     /* Japan flag: white with a red circle */
-    background-image: #ffffff; /* White background */
-    position: relative;
-  }
-  
-
-  section:nth-of-type(2)::before {
-    /* Red circle for japan flag */
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
-    background: #bc002d;
-    border-radius: 70%;
+    background-image: radial-gradient(circle, #BC002D 22%, #FFFFFF 22%)
   }
 
 
